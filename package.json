@@ -14,6 +14,7 @@
   "files": [
     "dist"
   ],
+  "exports": "./dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "format": "prettier --write '{src,test}/**/*.ts'",
@@ -23,9 +24,13 @@
   "devDependencies": {
     "@codecb/prettierrc": "0.0.1",
     "@codecb/tsconfigs": "0.0.9",
+    "@types/express": "4.17.14",
     "@types/node": "18.8.3",
     "prettier": "2.7.1",
     "typescript": "4.8.4"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
   },
   "prettier": "@codecb/prettierrc"
 }
