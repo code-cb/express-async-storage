@@ -1,0 +1,31 @@
+{
+  "name": "@codecb/express-async-storage",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "email": "icodemyownlife@gmail.com",
+    "name": "ICodeMyOwnLife"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-cb/express-async-storage.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "format": "prettier --write '{src,test}/**/*.ts'",
+    "prepublishOnly": "yarn build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@codecb/prettierrc": "0.0.1",
+    "@codecb/tsconfigs": "0.0.9",
+    "@types/node": "18.8.3",
+    "prettier": "2.7.1",
+    "typescript": "4.8.4"
+  },
+  "prettier": "@codecb/prettierrc"
+}
